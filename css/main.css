@@ -1,0 +1,79 @@
+/* CONTENT BLOCK */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.massage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(240, 207, 159);
+    margin-top: 5px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.massage__text {
+    padding: 7px;
+    font-size: 13px;
+}
+
+
+/* tasks block */
+.task {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.task__title {
+    display: flex;
+    flex-direction: column;
+}
+
+.task__name {
+    padding: 0px;
+    margin: 0px;
+    font-size: 30px;
+}
+
+.task__level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 12px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.time__text {
+    padding-left: 20px;
+}
+
+.task__analitics {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    border: 1px solid rgb(114, 179, 114);
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}

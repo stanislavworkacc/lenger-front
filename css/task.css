@@ -1,0 +1,125 @@
+/* CONTINUE THE MAIN BLOCK */
+
+/* description block */
+.description {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding-bottom: 15px;
+}
+
+.text {
+    margin: 15px;
+}
+
+.text_paragraph {
+    margin-bottom: 10px;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.codeExample {
+    display: flex;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+}
+
+.row_number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(233, 227, 227);
+    border-radius: 3px;
+    padding: 0px 10px;
+    text-align: center;
+}
+
+.row__text {
+    margin: 5px;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.write {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin: 10px 0px 0px 15px;
+}
+
+.write_text {
+    margin-left: 25px;
+    color: rgb(163, 162, 162);
+    font-size: 14px;
+}
+
+
+/* TWO TITLE LINE BEFORE AND AFTER */
+.description_title {
+    display: flex;
+    justify-content: center;
+    color: rgb(73, 73, 197);
+    font-size: 20px;
+};
+
+
+.description_title {              
+   display: flex;
+}
+
+.description_title span {
+    position: relative;
+}
+
+.description_title span:before {
+    display: block;                  
+    width:100%;                    
+    content: '';                     
+    position: absolute;              
+    border-bottom: 1px solid #000;   
+    top:50%;                         
+    right: 110px;                   
+}
+
+.description_title span:after {
+    display: block;
+    width:100%;
+    content: '';
+    height: 3px;
+    position: absolute;
+    border-bottom: 1px solid #000;
+    top:50%;
+    left: 110px; 
+}
+
+/* END */
+
+/* to devide two blocks */
+.lineCode::after {
+    content: '';
+    display: block;
+    height: 10px;
+}
+
+
+/* Solution BLOCK */
+.solution {
+    padding: 14px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+.solution__textArea {
+    width: 100%;
+    resize: none;
+    outline: none;
+    font-size: 14px;
+};
+
+/* this class dont work:
+inherit from html. Dont know how to fix */
+.solution__buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Solution END */

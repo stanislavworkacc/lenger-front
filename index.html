@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn and Enjoy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/progressBar.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/task.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <nav class="header__navigation">
+                    <ul class="header_menu">
+                        <li>
+                            <a href="index.html" class="header_item">
+                                Academy
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="header_item">
+                                <i class="fas fa-book-open"></i>
+                                Study plan
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="header_item">
+                                Map
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="header_item">
+                                Tracks
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header_input">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                        <input type="text" placeholder="Find topic">
+                    </div>
+                    <div class="user">
+                        <div class="user_task">
+                            <span>0</span>
+                        </div>
+                        <div class="user_bell">
+                            <i class="fa fa-bell" aria-hidden="true"></i>
+                        </div>
+                        <div class="user_avatar">
+                            <!-- BackGroundImage -->
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="progress">
+                <div class="progress-value">
+                    <!-- progress from server -->
+                    <span>Progress: 6 / 10</span>
+                </div>
+            </div>
+
+            <div class="massage">
+                <!-- massage text from server -->
+                <span class="massage__text">
+                    You have only 3 attempts to solve problem 
+                </span>
+            </div>
+
+            <div class="task">
+                <div class="task__title">
+                    <!-- name of the task -->
+                    <h3 class="task__name">Hello, Java</h3>
+                    <div class="task__level">
+                        <span>
+                            Medium
+                        </span>
+                        <div class="time">
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <div class="time__text">
+                                3 minutes
+                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="task__analitics">
+                    43767 users solved this problem. Latest completion was 37 minutes ago
+                </div>
+            </div>
+
+            <div class="description">
+                <div class="text">
+                    <div class="text_paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <div class="text_paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                    <div class="text_paragraph">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </div>
+                </div>
+                <div class="codeExample">
+                    <div class="row_number">
+                         1
+                    </div>
+                    <div class="row__text">
+                        Hello, Java!
+                    </div>
+                </div>
+                <div class="description_title">
+                    <span>Code Editor</span>
+                </div>
+                <div class="write">
+                    <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                    <div class="write_text">Write a program</div>
+                </div>
+            </div>
+            <!-- SPAN LINE -->
+            <span class="lineCode"></span>
+
+            <div class="solution">
+                <div class="solution_answer">
+                    <form action="#" method="POST">
+                        <!-- DATA FROM SERVER -->
+                        <textarea class="solution__textArea">
+
+                        </textarea>
+                        <!-- PREVENT DEFAULT ACTION  -->
+                        <div class="solution__buttons" style="display: flex;
+                        justify-content: space-between;">
+                            <input style="cursor: pointer; margin-top: 10px; background: #4676D7; padding: 5px 10px 5px 10px; border: 0;
+                            border-radius: 5px; color: aliceblue; font-family: Arial, Helvetica, sans-serif; font-weight: 700;" 
+                            type="submit" value="Run" class="button__submit">
+                            <input style="background-color: rgb(255, 255, 255); cursor: pointer; margin-top: 10px; padding: 5px 10px 5px 10px; border: 0;
+                            border-radius: 5px; color: rgb(66, 66, 235); font-family: Arial, Helvetica, sans-serif; font-weight: 700;" 
+                            type="submit" value="Cannot solve" class="button__submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
